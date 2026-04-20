@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honorary Consulate of Lithuania in Cameroon</title>
+  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-links">
+        <a href="#cooperation" data-i18n="topbar.cooperation">Lithuanian Development Cooperation</a>
+        <span>|</span>
+        <a href="#baltic" data-i18n="topbar.baltic">Strategy of the Baltic Sea Region</a>
+        <span>|</span>
+        <a href="https://www.lithuania.lt" target="_blank" data-i18n="topbar.gateway">Official Gateway of Lithuania</a>
+        <span>|</span>
+        <a href="https://www.studylithuania.lt" target="_blank" data-i18n="topbar.study">Study in Lithuania</a>
+        <span>|</span>
+        <a href="https://lithuania.travel" target="_blank" data-i18n="topbar.travel">Visit Lithuania</a>
+        <span>|</span>
+        <a href="#review" data-i18n="topbar.review">Lithuanian Foreign Policy Review</a>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <span class="theme-icon-light">☀️ <span data-i18n="theme.light">Light</span></span>
+          <span class="theme-icon-dark">🌙 <span data-i18n="theme.dark">Dark</span></span>
+        </button>
+        <div class="topbar-lang">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="lt">LT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo-block">
+        <!-- Accurate Vytis – Lithuanian Coat of Arms -->
+        <div class="coat-of-arms">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 80" width="50" height="67" aria-label="Coat of Arms of Lithuania – Vytis">
+            <!-- Shield (heater shape) -->
+            <path d="M3,3 L57,3 L57,56 L30,77 L3,56 Z" fill="#BE0032"/>
+            <path d="M5,5 L55,5 L55,55 L30,74 L5,55 Z" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+            <!-- Horse body (facing left) -->
+            <path d="M13,54 C13,47 18,44 28,43 C38,42 46,45 48,50 C50,55 46,60 36,62 C22,64 13,61 13,54Z" fill="white"/>
+            <!-- Horse hindquarters (right) -->
+            <path d="M46,52 C52,50 54,56 52,62 C50,66 46,65 44,61 C43,57 44,53 46,52Z" fill="white"/>
+            <!-- Horse neck (curves upper-left) -->
+            <path d="M15,50 C11,44 8,38 7,33 C6,30 8,28 10,30 C12,33 14,39 17,46Z" fill="white"/>
+            <!-- Horse head (facing left) -->
+            <ellipse cx="7" cy="29" rx="5" ry="3.8" fill="white" transform="rotate(-20 7 29)"/>
+            <!-- Horse ear -->
+            <polygon points="5,24 3,19 9,22" fill="white"/>
+            <!-- Horse muzzle detail -->
+            <path d="M3,32 Q3,34 5,35" stroke="#BE0032" stroke-width="0.7" fill="none" opacity="0.5"/>
+            <!-- Horse tail (right, flowing) -->
+            <path d="M50,54 C56,48 57,40 55,35 C53,31 50,33 50,38 C51,44 49,50 49,54Z" fill="white"/>
+            <!-- Front legs (left, raised in gallop) -->
+            <path d="M17,60 C15,65 13,70 12,73 C11,76 9,74 9,71 C10,68 12,63 14,60Z" fill="white"/>
+            <path d="M23,62 C22,67 20,71 19,74 C18,77 16,75 17,72 C18,69 19,64 21,62Z" fill="white"/>
+            <!-- Back legs (right) -->
+            <path d="M36,62 C36,67 35,71 35,74 C34,77 32,75 32,72 C33,69 34,64 35,62Z" fill="white"/>
+            <path d="M44,60 C45,65 45,69 45,73 C44,76 42,74 42,71 C43,68 43,63 43,60Z" fill="white"/>
+            <!-- Rider torso / armour -->
+            <path d="M18,34 C21,26 28,25 34,28 C39,31 38,40 33,44 C28,47 20,45 18,38 C17,36 18,34 18,34Z" fill="white"/>
+            <!-- Pauldrons (shoulder plates) -->
+            <ellipse cx="17" cy="35" rx="4" ry="3" fill="white" transform="rotate(-20 17 35)"/>
+            <ellipse cx="35" cy="33" rx="4" ry="3" fill="white" transform="rotate(20 35 33)"/>
+            <!-- Rider helmet / head -->
+            <path d="M21,16 C23,10 29,9 33,12 C37,15 36,22 32,25 C28,28 22,26 21,20 C20,18 21,16 21,16Z" fill="white"/>
+            <!-- Helmet visor slit -->
+            <path d="M22,20 L32,20" stroke="#BE0032" stroke-width="1" opacity="0.4"/>
+            <!-- Sword arm (knight's right — appears upper-LEFT, horse faces left) -->
+            <path d="M20,30 C17,24 14,18 11,13 C9,10 11,8 13,10 C16,14 19,21 22,28Z" fill="white"/>
+            <!-- Sword blade -->
+            <line x1="7" y1="5" x2="13" y2="13" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Sword crossguard -->
+            <line x1="5" y1="11" x2="15" y2="8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Shield arm (knight's left — appears on RIGHT) -->
+            <path d="M33,30 C38,26 43,22 46,20 C44,27 40,34 37,38Z" fill="white"/>
+            <!-- Knight's heraldic shield: blue, gold double cross -->
+            <path d="M43,18 L51,16 L53,29 L44,32 Z" fill="#003DA5"/>
+            <path d="M43,18 L51,16 L53,29 L44,32 Z" fill="none" stroke="#F5C518" stroke-width="1.2"/>
+            <line x1="48" y1="17" x2="48" y2="31" stroke="#F5C518" stroke-width="1.6"/>
+            <line x1="44" y1="21" x2="52" y2="21" stroke="#F5C518" stroke-width="1.6"/>
+            <line x1="44" y1="25" x2="52" y2="25" stroke="#F5C518" stroke-width="1.6"/>
+            <!-- Scabbard (gold) -->
+            <path d="M26,43 C25,50 24,58 24,62" stroke="#F5C518" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M29,43 C28,50 27,57 27,61" stroke="#F5C518" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.5"/>
+            <!-- Belt (gold) -->
+            <path d="M18,41 C24,43 30,44 36,42" stroke="#F5C518" stroke-width="1.2" fill="none"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title" data-i18n="logo.title">Republic of Lithuania</span>
+          <span class="logo-sub" data-i18n="logo.sub">Honorary Consulate · Yaoundé, Cameroon</span>
+        </div>
+      </div>
+      <nav class="nav" id="main-nav">
+        <a href="#about" data-i18n="nav.about">About Lithuania</a>
+        <a href="#investment" data-i18n="nav.investment">Investment</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#consular" data-i18n="nav.consular">Consular Info</a>
+        <a href="#consul" data-i18n="nav.consul">Our Consul</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-tag" data-i18n="hero.tag">Lithuania's Honorary Consul in Yaoundé</p>
+        <h1 data-i18n="hero.title">The Only Lithuanian Representation in Cameroon</h1>
+        <p class="hero-desc" data-i18n="hero.desc">Building bridges between Lithuania and Cameroon — fostering culture, trade, education, and cooperation.</p>
+        <div class="hero-actions">
+          <a href="#consular" class="btn btn-primary" data-i18n="hero.btn.consular">Consular Services</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero.btn.contact">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- BILATERAL FLAGS — inline layout, always visible -->
+      <div class="bilateral-flags">
+        <div class="flag-wrapper">
+          <div class="flag-lt">
+            <div style="background:#FDB913;flex:1"></div>
+            <div style="background:#006A44;flex:1"></div>
+            <div style="background:#C1272D;flex:1"></div>
+          </div>
+          <span class="flag-label" data-i18n="flag.lt">Lithuania</span>
+        </div>
+
+        <div class="flag-connector">
+          <div class="connector-line"></div>
+          <div class="connector-diamond">✦</div>
+          <div class="connector-line"></div>
+          <span class="connector-text" data-i18n="bilateral.text">Bilateral Cooperation</span>
+        </div>
+
+        <div class="flag-wrapper">
+          <div class="flag-cm">
+            <div style="background:#007A5E;flex:1"></div>
+            <div style="background:#CE1126;flex:1;display:flex;align-items:center;justify-content:center">
+              <span style="color:#FCD116;font-size:1.1rem;line-height:1">★</span>
+            </div>
+            <div style="background:#FCD116;flex:1"></div>
+          </div>
+          <span class="flag-label" data-i18n="flag.cm">Cameroon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK INFO BAR -->
+  <div class="info-bar">
+    <div class="container info-bar-inner">
+      <div class="info-item">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><strong data-i18n="info.location.label">Location</strong><span data-i18n="info.location.value">Mbn Global Education, Yaoundé</span></div>
+      </div>
+      <div class="info-divider"></div>
+      <div class="info-item">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div><strong data-i18n="info.hours.label">Opening Hours</strong><span data-i18n="info.hours.value">Mon–Fri: 9:00 – 13:00</span></div>
+      </div>
+      <div class="info-divider"></div>
+      <div class="info-item">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+        <div><strong data-i18n="info.phone.label">Phone</strong><span>+237 682 29 30 61</span></div>
+      </div>
+      <div class="info-divider"></div>
+      <div class="info-item">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <div><strong data-i18n="info.email.label">Email</strong><span>honorary.consul@lithuania.cm</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LITHUANIA PHOTO SLIDER -->
+  <section class="lt-slider" id="lt-slider" aria-label="Discover Lithuania">
+    <div class="slider-header">
+      <p class="section-tag" data-i18n="slider.tag">Discover Lithuania</p>
+      <h2 data-i18n="slider.title">A Country Worth Knowing</h2>
+    </div>
+    <div class="slider-wrapper">
+      <div class="slider-track" id="sliderTrack">
+
+        <div class="slide slide-vilnius">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-icon">🏰</span>
+            <div class="slide-location" data-i18n="slide1.location">Vilnius</div>
+            <h3 data-i18n="slide1.title">Vilnius Old Town</h3>
+            <p data-i18n="slide1.desc">A stunning baroque cityscape and UNESCO World Heritage Site — the jewel of the Baltic.</p>
+          </div>
+        </div>
+
+        <div class="slide slide-curonian">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-icon">🏖️</span>
+            <div class="slide-location" data-i18n="slide2.location">Neringa</div>
+            <h3 data-i18n="slide2.title">Curonian Spit</h3>
+            <p data-i18n="slide2.desc">A unique sand dune peninsula stretching along the Baltic Sea — protected as a UNESCO World Heritage Site.</p>
+          </div>
+        </div>
+
+        <div class="slide slide-trakai">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-icon">🏯</span>
+            <div class="slide-location" data-i18n="slide3.location">Trakai</div>
+            <h3 data-i18n="slide3.title">Trakai Island Castle</h3>
+            <p data-i18n="slide3.desc">A magnificent Gothic island fortress rising from the serene waters of Lake Galvė.</p>
+          </div>
+        </div>
+
+        <div class="slide slide-nature">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-icon">🌲</span>
+            <div class="slide-location" data-i18n="slide4.location">Aukštaitija</div>
+            <h3 data-i18n="slide4.title">Pristine Nature</h3>
+            <p data-i18n="slide4.desc">Vast ancient forests, crystal-clear lakes, and peaceful river valleys — nature at its purest.</p>
+          </div>
+        </div>
+
+        <div class="slide slide-kaunas">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="slide-icon">🌆</span>
+            <div class="slide-location" data-i18n="slide5.location">Kaunas</div>
+            <h3 data-i18n="slide5.title">Kaunas — City of the Future</h3>
+            <p data-i18n="slide5.desc">European Capital of Culture 2022 — a vibrant hub of art deco architecture, innovation, and nightlife.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous slide">&#8249;</button>
+      <button class="slider-btn slider-next" id="sliderNext" aria-label="Next slide">&#8250;</button>
+
+      <div class="slider-dots" id="sliderDots">
+        <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+        <button class="dot" data-slide="3" aria-label="Slide 4"></button>
+        <button class="dot" data-slide="4" aria-label="Slide 5"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WELCOME -->
+  <section class="welcome section" id="welcome">
+    <div class="container welcome-inner">
+      <div class="welcome-text">
+        <p class="section-tag" data-i18n="welcome.tag">Welcome</p>
+        <h2 data-i18n="welcome.title">Discover Lithuania</h2>
+        <p data-i18n="welcome.p1">If you really want to know Lithuania, you must first begin to get to know its people. Most Lithuanians are very sincere, hospitable and helpful — and, in fact, we expect the same treatment in return from our guests.</p>
+        <p data-i18n="welcome.p2">Lithuania is a country of seemingly endless forests, lakes scattered across its landscape, rivers that criss-cross the country, and the unforgettably beautiful Curonian Spit bathed by the Baltic Sea.</p>
+        <p data-i18n="welcome.p3">Whether you are drawn by its medieval old towns, its vibrant startup scene, or the warmth of its people — Lithuania awaits. We are pleased to welcome citizens of Cameroon and West Africa to explore everything this remarkable nation has to offer.</p>
+        <a href="#about" class="btn btn-primary" data-i18n="welcome.btn">Learn More</a>
+      </div>
+      <div class="welcome-cards">
+        <div class="welcome-card green">
+          <div class="card-icon">🌲</div>
+          <h3 data-i18n="welcome.card1.title">Nature &amp; Culture</h3>
+          <p data-i18n="welcome.card1.text">Curonian Spit, Aukštaitija National Park, Vilnius Old Town — UNESCO heritage of extraordinary beauty.</p>
+        </div>
+        <div class="welcome-card dark">
+          <div class="card-icon">🏙️</div>
+          <h3 data-i18n="welcome.card2.title">Innovation Hub</h3>
+          <p data-i18n="welcome.card2.text">Lithuania ranks among Europe's top fintech ecosystems with a thriving startup community and EU digital market access.</p>
+        </div>
+        <div class="welcome-card outline">
+          <div class="card-icon">🎓</div>
+          <h3 data-i18n="welcome.card3.title">Academic Excellence</h3>
+          <p data-i18n="welcome.card3.text">World-class universities offering programmes in English. Affordable tuition and living costs within the EU.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT LITHUANIA -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-i18n="about.tag">About</p>
+        <h2 data-i18n="about.title">About Lithuania</h2>
+        <p class="section-desc" data-i18n="about.desc">A proud Baltic nation with a rich history, vibrant culture, and a growing presence on the global stage.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card"><div class="about-icon">🏛️</div><h3 data-i18n="about.card1.title">History &amp; Heritage</h3><p data-i18n="about.card1.text">Lithuania is one of Europe's oldest nations, with a history stretching back over a millennium. Its Old Town of Vilnius is a UNESCO World Heritage Site, deeply rooted in language, folklore, and traditions.</p></div>
+        <div class="about-card"><div class="about-icon">🇪🇺</div><h3 data-i18n="about.card2.title">EU &amp; NATO Member</h3><p data-i18n="about.card2.text">A member of the European Union and NATO since 2004, Lithuania is a stable and growing democracy at the heart of the Baltic region, with strong rule of law and a business-friendly environment.</p></div>
+        <div class="about-card"><div class="about-icon">💻</div><h3 data-i18n="about.card3.title">Digital Economy</h3><p data-i18n="about.card3.text">Lithuania has one of Europe's fastest-growing fintech sectors and has attracted over 200 licensed financial institutions. It offers a highly skilled workforce, competitive costs, and full EU market access.</p></div>
+        <div class="about-card"><div class="about-icon">🌍</div><h3 data-i18n="about.card4.title">Global Relations</h3><p data-i18n="about.card4.text">Lithuania maintains strong diplomatic ties worldwide and is committed to international development cooperation, contributing to peace and sustainable growth in partner countries across Africa and beyond.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTMENT -->
+  <section class="investment section" id="investment">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-tag" data-i18n="invest.tag">Opportunities</p>
+        <h2 data-i18n="invest.title">Investment Opportunities</h2>
+        <p class="section-desc" data-i18n="invest.desc">Lithuania offers a strategic gateway into the European Union's single market of 450 million consumers.</p>
+      </div>
+      <div class="invest-grid">
+        <div class="invest-card"><div class="invest-num">01</div><h3 data-i18n="invest.card1.title">Fintech &amp; Finance</h3><p data-i18n="invest.card1.text">Europe's fastest-growing fintech hub. The Bank of Lithuania's SEMI framework allows rapid licencing with full EU passporting rights.</p></div>
+        <div class="invest-card"><div class="invest-num">02</div><h3 data-i18n="invest.card2.title">Life Sciences &amp; Biotech</h3><p data-i18n="invest.card2.text">A booming cluster in genomics, laser technology, and medical devices — backed by world-class research and EU-funded R&amp;D.</p></div>
+        <div class="invest-card"><div class="invest-num">03</div><h3 data-i18n="invest.card3.title">Manufacturing &amp; Logistics</h3><p data-i18n="invest.card3.text">Strategic Baltic location connecting Eastern and Western Europe. Competitive labour costs with a highly educated workforce.</p></div>
+        <div class="invest-card"><div class="invest-num">04</div><h3 data-i18n="invest.card4.title">Green Energy</h3><p data-i18n="invest.card4.text">Investing heavily in offshore wind, solar, and green hydrogen, offering international partnership opportunities.</p></div>
+        <div class="invest-card"><div class="invest-num">05</div><h3 data-i18n="invest.card5.title">IT &amp; Shared Services</h3><p data-i18n="invest.card5.text">Barclays, Danske Bank, and Western Union have major centres in Lithuania — drawn by talent and cost efficiency.</p></div>
+        <div class="invest-card"><div class="invest-num">06</div><h3 data-i18n="invest.card6.title">Agriculture &amp; Food</h3><p data-i18n="invest.card6.text">Rich agricultural land and strong food processing. Joint venture opportunities in organic farming and EU exports.</p></div>
+      </div>
+      <div class="invest-cta">
+        <p data-i18n="invest.cta">Interested in investing in Lithuania? The Consulate can facilitate initial contacts with <strong>Invest Lithuania</strong>, the national investment promotion agency.</p>
+        <a href="#contact" class="btn btn-outline-white" data-i18n="invest.cta.btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-i18n="edu.tag">Education &amp; Research</p>
+        <h2 data-i18n="edu.title">Study &amp; Research in Lithuania</h2>
+        <p class="section-desc" data-i18n="edu.desc">Lithuania's universities offer internationally recognised degrees in a welcoming European environment.</p>
+      </div>
+      <div class="edu-layout">
+        <div class="edu-main">
+          <h3 data-i18n="edu.why.title">Why Study in Lithuania?</h3>
+          <ul class="edu-list">
+            <li><span class="edu-check">✓</span><div><strong data-i18n="edu.li1.strong">EU-recognised degrees</strong> — <span data-i18n="edu.li1.text">Qualifications accepted throughout the EU and beyond.</span></div></li>
+            <li><span class="edu-check">✓</span><div><strong data-i18n="edu.li2.strong">English-taught programmes</strong> — <span data-i18n="edu.li2.text">Hundreds of Bachelor's, Master's, and PhD programmes in English.</span></div></li>
+            <li><span class="edu-check">✓</span><div><strong data-i18n="edu.li3.strong">Affordable tuition</strong> — <span data-i18n="edu.li3.text">Annual fees from €2,000–€5,000, significantly lower than Western Europe.</span></div></li>
+            <li><span class="edu-check">✓</span><div><strong data-i18n="edu.li4.strong">Scholarships available</strong> — <span data-i18n="edu.li4.text">The Lithuanian Government offers scholarships for students from developing countries.</span></div></li>
+            <li><span class="edu-check">✓</span><div><strong data-i18n="edu.li5.strong">Safe and welcoming</strong> — <span data-i18n="edu.li5.text">Lithuania consistently ranks among Europe's safest countries.</span></div></li>
+            <li><span class="edu-check">✓</span><div><strong data-i18n="edu.li6.strong">Research excellence</strong> — <span data-i18n="edu.li6.text">Vilnius University (est. 1579) and KTU are recognised in global rankings.</span></div></li>
+          </ul>
+          <a href="https://www.studylithuania.lt" target="_blank" class="btn btn-primary" data-i18n="edu.portal.btn">Study in Lithuania Portal</a>
+        </div>
+        <div class="edu-side">
+          <div class="uni-card"><h4>Vilnius University</h4><p data-i18n="uni.vilnius">Founded in 1579 — one of the oldest in Northern Europe. Strong in law, medicine, natural sciences, and humanities.</p></div>
+          <div class="uni-card"><h4>Kaunas University of Technology</h4><p data-i18n="uni.kaunas">Lithuania's largest technical university, top 5% globally in engineering and technology.</p></div>
+          <div class="uni-card"><h4>Lithuanian University of Health Sciences</h4><p data-i18n="uni.health">Leading for medicine, pharmacy, and veterinary sciences — English-medium medical degrees.</p></div>
+          <div class="uni-card"><h4>ISM University of Management</h4><p data-i18n="uni.ism">Internationally accredited business school offering MBA and executive education.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSULAR -->
+  <section class="consular section" id="consular">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-tag" data-i18n="consular.tag">Consular Services</p>
+        <h2 data-i18n="consular.title">Consular Information</h2>
+        <p class="section-desc" data-i18n="consular.desc">The Honorary Consulate provides a range of services to Lithuanian citizens and Cameroonian nationals.</p>
+      </div>
+      <div class="consular-grid">
+        <div class="consular-card"><div class="consular-icon">📋</div><h3 data-i18n="consular.card1.title">Visa Information</h3><p data-i18n="consular.card1.text">Cameroonian nationals wishing to apply for a Lithuanian Schengen visa should submit their application through the French Embassy in Yaoundé, as France manages Lithuania's Schengen visa processing in Cameroon. We provide guidance on required documentation and the process.</p><a href="#faq" class="consular-link" data-i18n="consular.card1.link">Read visa FAQ →</a></div>
+        <div class="consular-card"><div class="consular-icon">🆘</div><h3 data-i18n="consular.card2.title">Emergency Assistance</h3><p data-i18n="consular.card2.text">Lithuanian citizens in distress in Cameroon can contact us for emergency liaison with Lithuanian authorities and welfare assistance.</p><a href="#contact" class="consular-link" data-i18n="consular.card2.link">Contact for emergencies →</a></div>
+        <div class="consular-card"><div class="consular-icon">📜</div><h3 data-i18n="consular.card3.title">Document Legalisation</h3><p data-i18n="consular.card3.text">Assistance with apostille, authentication, and legalisation for documents used in Lithuania or Cameroon.</p><a href="#contact" class="consular-link" data-i18n="consular.card3.link">Enquire now →</a></div>
+        <div class="consular-card"><div class="consular-icon">🤝</div><h3 data-i18n="consular.card4.title">Business Support</h3><p data-i18n="consular.card4.text">Facilitation of business contacts and commercial representation between Cameroon and Lithuania.</p><a href="#contact" class="consular-link" data-i18n="consular.card4.link">Get support →</a></div>
+        <div class="consular-card"><div class="consular-icon">🎓</div><h3 data-i18n="consular.card5.title">Student Support</h3><p data-i18n="consular.card5.text">Guidance for Cameroonian students on admissions, scholarships, student visas, and living in Lithuania.</p><a href="#education" class="consular-link" data-i18n="consular.card5.link">Study in Lithuania →</a></div>
+        <div class="consular-card"><div class="consular-icon">📞</div><h3 data-i18n="consular.card6.title">Information &amp; Referrals</h3><p data-i18n="consular.card6.text">General information about Lithuania and referrals to relevant government agencies and embassies.</p><a href="#contact" class="consular-link" data-i18n="consular.card6.link">Ask a question →</a></div>
+      </div>
+      <div class="hours-box">
+        <h3 data-i18n="hours.title">Consulate Opening Hours</h3>
+        <div class="hours-grid">
+          <div class="hours-row"><span class="day" data-i18n="hours.mth">Monday – Thursday</span><span class="time">09:00 – 13:00</span><span class="status open" data-i18n="hours.open">Open</span></div>
+          <div class="hours-row"><span class="day" data-i18n="hours.fri">Friday</span><span class="time">09:00 – 12:00</span><span class="status open" data-i18n="hours.open">Open</span></div>
+          <div class="hours-row"><span class="day" data-i18n="hours.sat">Saturday – Sunday</span><span class="time">—</span><span class="status closed" data-i18n="hours.closed">Closed</span></div>
+          <div class="hours-row"><span class="day" data-i18n="hours.ph">Public Holidays</span><span class="time">—</span><span class="status closed" data-i18n="hours.closed">Closed</span></div>
+        </div>
+        <p class="hours-note" data-i18n="hours.note">Appointments recommended. Please email or call in advance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT THE HONORARY CONSUL -->
+  <section class="consul-section section" id="consul">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-i18n="consul.tag">Our Representative</p>
+        <h2 data-i18n="consul.title">The Honorary Consul &amp; Team</h2>
+        <p class="section-desc" data-i18n="consul.desc">Meet the team dedicated to strengthening ties between Lithuania and Cameroon.</p>
+      </div>
+
+      <div class="consul-profile">
+        <div class="consul-avatar">
+          <div class="avatar-circle"><span class="avatar-initials">DS</span></div>
+          <div class="consul-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 80" width="28" height="37">
+              <path d="M3,3 L57,3 L57,56 L30,77 L3,56 Z" fill="#BE0032"/>
+              <path d="M13,54 C13,47 18,44 28,43 C38,42 46,45 48,50 C50,55 46,60 36,62 C22,64 13,61 13,54Z" fill="white"/>
+              <path d="M15,50 C11,44 8,38 7,33 C6,30 8,28 10,30 C12,33 14,39 17,46Z" fill="white"/>
+              <ellipse cx="7" cy="29" rx="5" ry="3.8" fill="white" transform="rotate(-20 7 29)"/>
+              <path d="M18,34 C21,26 28,25 34,28 C39,31 38,40 33,44 C28,47 20,45 18,38Z" fill="white"/>
+              <path d="M21,16 C23,10 29,9 33,12 C37,15 36,22 32,25 C28,28 22,26 21,20Z" fill="white"/>
+              <path d="M20,30 C17,24 14,18 11,13 C9,10 11,8 13,10 C16,14 19,21 22,28Z" fill="white"/>
+              <line x1="7" y1="5" x2="13" y2="13" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="5" y1="11" x2="15" y2="8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M43,18 L51,16 L53,29 L44,32 Z" fill="#003DA5"/>
+              <line x1="48" y1="17" x2="48" y2="31" stroke="#F5C518" stroke-width="1.6"/>
+              <line x1="44" y1="21" x2="52" y2="21" stroke="#F5C518" stroke-width="1.6"/>
+              <line x1="44" y1="25" x2="52" y2="25" stroke="#F5C518" stroke-width="1.6"/>
+            </svg>
+          </div>
+        </div>
+        <div class="consul-bio">
+          <h3 class="consul-name">Deli Sarsar</h3>
+          <p class="consul-role" data-i18n="consul.role">Honorary Consul of the Republic of Lithuania in Cameroon</p>
+          <div class="consul-divider"></div>
+          <p data-i18n="consul.bio1">Mr. Deli Sarsar serves as the Honorary Consul of the Republic of Lithuania in Cameroon, appointed to represent Lithuanian interests and strengthen bilateral relations between both nations. Based in Yaoundé, he is the sole official representative of Lithuania in the country.</p>
+          <p data-i18n="consul.bio2">The Honorary Consulate is based behind the Mbn Global Education campus in Yaoundé. Entrance at the back. Mr. Sarsar works to connect Cameroonian students and professionals with international academic opportunities, including pathways to study in Lithuania and other EU member states.</p>
+          <p data-i18n="consul.bio3">Additionally, Mr. Sarsar leads <strong>Prime Nexus</strong>, a technology firm that partners with businesses and institutions worldwide to design, secure, and operate technology meeting international standards — specialising in cloud infrastructure, cybersecurity, data management, and software delivery.</p>
+          <p data-i18n="consul.bio4">Through these combined roles, Mr. Sarsar actively promotes cultural exchange, educational partnerships, technology cooperation, and economic ties between Lithuania and Cameroon.</p>
+          <div class="consul-tags">
+            <span class="consul-tag" data-i18n="consul.tag1">Honorary Consul</span>
+            <span class="consul-tag" data-i18n="consul.tag2">Education</span>
+            <span class="consul-tag" data-i18n="consul.tag3">Technology</span>
+            <span class="consul-tag" data-i18n="consul.tag4">Bilateral Relations</span>
+            <span class="consul-tag" data-i18n="consul.tag5">EU Partnerships</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-section">
+        <h3 class="team-title" data-i18n="team.title">The Consulate Team</h3>
+        <div class="team-grid">
+          <div class="team-card"><div class="team-avatar"><span>CL</span></div><h4 data-i18n="team.member1.name">Consular Liaison Officer</h4><p data-i18n="team.member1.role">Handles consular enquiries, documentation and citizen assistance for Lithuanian nationals in Cameroon.</p></div>
+          <div class="team-card"><div class="team-avatar"><span>EA</span></div><h4 data-i18n="team.member2.name">Education Advisor</h4><p data-i18n="team.member2.role">Specialist in Lithuanian university admissions, scholarship applications, and student visa guidance.</p></div>
+          <div class="team-card"><div class="team-avatar"><span>TC</span></div><h4 data-i18n="team.member3.name">Trade &amp; Commerce Officer</h4><p data-i18n="team.member3.role">Facilitates business introductions, trade enquiries, and investment support between Lithuania and Cameroon.</p></div>
+        </div>
+        <p class="team-note" data-i18n="team.note">For appointments and enquiries, please contact the consulate directly via email or telephone.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVELOPMENT COOPERATION -->
+  <section class="cooperation section" id="cooperation">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-i18n="coop.tag">Partnership</p>
+        <h2 data-i18n="coop.title">Lithuanian Development Cooperation</h2>
+        <p class="section-desc" data-i18n="coop.desc">Lithuania is committed to supporting sustainable development globally through official development assistance.</p>
+      </div>
+      <div class="coop-layout">
+        <div class="coop-text">
+          <p data-i18n="coop.p1">Lithuania implements development cooperation through the Ministry of Foreign Affairs and in partnership with UN agencies, EU institutions, and bilateral partners. Key focus areas include democracy, education, capacity building, and civil society support.</p>
+          <p data-i18n="coop.p2">The Baltic Development Cooperation initiative brings together Estonia, Latvia, and Lithuania in joint projects, contributing to the EU's collective development assistance framework.</p>
+          <h3 id="baltic" data-i18n="coop.baltic.title">Strategy of the Baltic Sea Region</h3>
+          <p data-i18n="coop.baltic.text">The EU Strategy for the Baltic Sea Region (EUSBSR) promotes cooperation on environment, transport, energy, and economic development. Lithuania is an active participant and champion of this regional framework.</p>
+          <a href="https://www.mfa.lt" target="_blank" class="btn btn-primary" data-i18n="coop.btn">Lithuanian MFA →</a>
+        </div>
+        <div class="coop-pillars">
+          <div class="pillar"><div class="pillar-num">1</div><div><h4 data-i18n="coop.pillar1.title">Democracy &amp; Governance</h4><p data-i18n="coop.pillar1.text">Supporting democratic institutions, rule of law, and transparent governance in partner countries.</p></div></div>
+          <div class="pillar"><div class="pillar-num">2</div><div><h4 data-i18n="coop.pillar2.title">Education &amp; Capacity Building</h4><p data-i18n="coop.pillar2.text">Scholarships, training programmes, and knowledge-transfer initiatives for developing nations.</p></div></div>
+          <div class="pillar"><div class="pillar-num">3</div><div><h4 data-i18n="coop.pillar3.title">Civil Society</h4><p data-i18n="coop.pillar3.text">Supporting NGOs that advance human rights and democratic values in partner countries.</p></div></div>
+          <div class="pillar"><div class="pillar-num">4</div><div><h4 data-i18n="coop.pillar4.title">Sustainable Development</h4><p data-i18n="coop.pillar4.text">Aligned with the UN SDGs, contributing to the 2030 Agenda for Sustainable Development.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-tag" data-i18n="faq.tag">Questions</p>
+        <h2 data-i18n="faq.title">Frequently Asked Questions</h2>
+        <p class="section-desc" data-i18n="faq.desc">Find answers to the most common questions about the consulate and visiting Lithuania.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-i18n="faq.q1">What is an Honorary Consul and what services can they provide?</span><span class="faq-arrow">▼</span></button><div class="faq-answer"><p data-i18n="faq.a1">An Honorary Consul is an unpaid representative appointed to perform limited consular functions. They cannot issue passports or Schengen visas but can provide information, emergency assistance, notarial services, and act as a liaison between the two countries.</p></div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-i18n="faq.q2">How do I apply for a Schengen visa to visit Lithuania?</span><span class="faq-arrow">▼</span></button><div class="faq-answer"><p data-i18n="faq.a2">Cameroonian nationals require a Schengen visa. Applications must be submitted at the Embassy of Lithuania in Cairo, Egypt, or in Pretoria, South Africa. The Consulate provides guidance and documentation advice but does not process visa applications.</p></div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-i18n="faq.q3">Can Lithuanian citizens get emergency help from the Consulate?</span><span class="faq-arrow">▼</span></button><div class="faq-answer"><p data-i18n="faq.a3">Yes. Lithuanian citizens in distress should contact the Consulate immediately. We assist with emergency liaison to Lithuanian authorities, including coordination with the Embassies in Cairo and Pretoria, and can facilitate emergency travel documentation.</p></div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-i18n="faq.q4">What scholarships are available for Cameroonians to study in Lithuania?</span><span class="faq-arrow">▼</span></button><div class="faq-answer"><p data-i18n="faq.a4">The Lithuanian Government offers state scholarships for students from developing countries including Cameroon. Many universities also offer their own international scholarships. Contact the Consulate or visit Mbn Global Education for current opportunities.</p></div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-i18n="faq.q5">What are the main sectors for Cameroon–Lithuania cooperation?</span><span class="faq-arrow">▼</span></button><div class="faq-answer"><p data-i18n="faq.a5">Key areas include agriculture, IT, renewable energy, education services, healthcare, and technology. Lithuania excels in fintech, laser technology, cybersecurity (via Prime Nexus), and advanced manufacturing. The Consulate facilitates business introductions.</p></div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-i18n="faq.q6">Is an appointment required to visit the Consulate?</span><span class="faq-arrow">▼</span></button><div class="faq-answer"><p data-i18n="faq.a6">Appointments are strongly recommended. Please contact us by phone or email during office hours to schedule. Walk-ins may be received subject to availability.</p></div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false"><span data-i18n="faq.q7">How do I get documents apostilled for use in Lithuania?</span><span class="faq-arrow">▼</span></button><div class="faq-answer"><p data-i18n="faq.a7">Cameroon is a signatory to the Hague Apostille Convention. Documents must be apostilled by the Cameroonian Ministry of Justice. The Consulate can guide you through the full process.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOREIGN POLICY REVIEW -->
+  <section class="review section" id="review">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-i18n="review.tag">Publications</p>
+        <h2 data-i18n="review.title">Lithuanian Foreign Policy Review</h2>
+        <p class="section-desc" data-i18n="review.desc">Stay informed with Lithuania's official foreign policy publications and international positions.</p>
+      </div>
+      <div class="review-cards">
+        <div class="review-card"><span class="review-tag" data-i18n="review.card1.tag">Foreign Policy</span><h3 data-i18n="review.card1.title">Lithuania's Global Engagement</h3><p data-i18n="review.card1.text">Lithuania's foreign policy priorities centre on Euro-Atlantic integration, regional security, democracy promotion, and development cooperation worldwide.</p></div>
+        <div class="review-card"><span class="review-tag" data-i18n="review.card2.tag">Diplomacy</span><h3 data-i18n="review.card2.title">Africa–Lithuania Relations</h3><p data-i18n="review.card2.text">Lithuania is expanding its diplomatic footprint in Sub-Saharan Africa through Honorary Consulates, development programmes, and growing educational partnerships.</p></div>
+        <div class="review-card"><span class="review-tag" data-i18n="review.card3.tag">Security</span><h3 data-i18n="review.card3.title">Baltic Security Framework</h3><p data-i18n="review.card3.text">As a NATO member, Lithuania actively contributes to European and international security, including peacekeeping missions and cybersecurity cooperation.</p></div>
+      </div>
+      <div class="review-cta">
+        <a href="https://www.mfa.lt/en/the-lithuanian-foreign-policy-review" target="_blank" class="btn btn-primary" data-i18n="review.btn">Read the Full Review →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-tag" data-i18n="contact.tag">Get in Touch</p>
+        <h2 data-i18n="contact.title">Contact Us</h2>
+        <p class="section-desc" data-i18n="contact.desc">We welcome enquiries from Lithuanian citizens, Cameroonian nationals, businesses, and institutions.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h3 data-i18n="contact.consul.name">Honorary Consulate of Lithuania</h3>
+          <p class="contact-subtitle" data-i18n="contact.consul.sub">in Cameroon – Yaoundé</p>
+          <div class="contact-details">
+            <div class="contact-item"><div class="contact-icon">📍</div><div><strong data-i18n="contact.addr.label">Address</strong><p data-i18n="contact.addr.value">Mbn Global Education – Campus De Yaoundé<br>Yaoundé, Cameroon</p></div></div>
+            <div class="contact-item"><div class="contact-icon">🕘</div><div><strong data-i18n="contact.hours.label">Office Hours</strong><p data-i18n="contact.hours.value">Monday – Thursday: 9:00 – 13:00<br>Friday: 9:00 – 12:00</p></div></div>
+            <div class="contact-item"><div class="contact-icon">📞</div><div><strong data-i18n="contact.phone.label">Telephone</strong><p>+237 682 29 30 61</p></div></div>
+            <div class="contact-item"><div class="contact-icon">✉️</div><div><strong data-i18n="contact.email.label">Email</strong><p>honorary.consul@lithuania.cm</p></div></div>
+          </div>
+          <div class="emergency-box">
+            <h4 data-i18n="emergency.title">🚨 Emergency Contact</h4>
+            <p data-i18n="emergency.text">For Lithuanian citizens in emergency situations outside office hours, contact the <strong>Embassy of Lithuania in Cairo, Egypt</strong> or <strong>Pretoria, South Africa</strong>, or the Lithuanian MFA duty line: <strong>+370 5 236 2516</strong>.</p>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <h3 data-i18n="form.title">Send a Message</h3>
+            <div class="form-row">
+              <div class="form-group"><label for="name" data-i18n="form.name">Full Name *</label><input type="text" id="name" name="name" required placeholder="Your full name" /></div>
+              <div class="form-group"><label for="email" data-i18n="form.email">Email Address *</label><input type="email" id="email" name="email" required placeholder="your@email.com" /></div>
+            </div>
+            <div class="form-group">
+              <label for="subject" data-i18n="form.subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="" data-i18n="form.subject.placeholder">Select a topic…</option>
+                <option data-i18n="form.opt1">Visa Information</option>
+                <option data-i18n="form.opt2">Emergency Assistance</option>
+                <option data-i18n="form.opt3">Document Legalisation</option>
+                <option data-i18n="form.opt4">Business / Investment</option>
+                <option data-i18n="form.opt5">Education / Scholarships</option>
+                <option data-i18n="form.opt6">General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="message" data-i18n="form.message">Message *</label><textarea id="message" name="message" rows="5" required placeholder="Describe your enquiry…"></textarea></div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="form.send">Send Message</button>
+            <p class="form-note" data-i18n="form.note">We aim to respond within 2 business days.</p>
+          </form>
+          <div class="form-success" id="form-success" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h3 data-i18n="form.success.title">Message Sent!</h3>
+            <p data-i18n="form.success.text">Thank you for contacting the Honorary Consulate of Lithuania in Cameroon. We will respond within 2 business days.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EMBEDDED INTERACTIVE MAP -->
+      <div class="map-section">
+        <h3 data-i18n="map.title">Find Us — Mbn Global Education, Yaoundé</h3>
+        <div class="map-embed-wrap">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=11.47%2C3.82%2C11.54%2C3.88&amp;layer=mapnik&amp;marker=3.848%2C11.502"
+            width="100%"
+            height="420"
+            style="border:0;border-radius:12px;"
+            loading="lazy"
+            title="Mbn Global Education – Campus De Yaoundé"
+            aria-label="Interactive map showing the consulate location in Yaoundé, Cameroon">
+          </iframe>
+          <div class="map-footer">
+            <span>📍 <strong data-i18n="map.location">Mbn Global Education – Campus De Yaoundé, Cameroon</strong></span>
+            <a href="https://www.openstreetmap.org/?mlat=3.848&mlon=11.502#map=14/3.848/11.502" target="_blank" class="btn btn-outline-dark btn-sm" data-i18n="map.btn">Open Full Map</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 80" width="36" height="48">
+              <path d="M3,3 L57,3 L57,56 L30,77 L3,56 Z" fill="#BE0032"/>
+              <path d="M13,54 C13,47 18,44 28,43 C38,42 46,45 48,50 C50,55 46,60 36,62 C22,64 13,61 13,54Z" fill="white"/>
+              <path d="M15,50 C11,44 8,38 7,33 C6,30 8,28 10,30 C12,33 14,39 17,46Z" fill="white"/>
+              <ellipse cx="7" cy="29" rx="5" ry="3.8" fill="white" transform="rotate(-20 7 29)"/>
+              <path d="M18,34 C21,26 28,25 34,28 C39,31 38,40 33,44 C28,47 20,45 18,38Z" fill="white"/>
+              <path d="M21,16 C23,10 29,9 33,12 C37,15 36,22 32,25 C28,28 22,26 21,20Z" fill="white"/>
+              <path d="M20,30 C17,24 14,18 11,13 C9,10 11,8 13,10 C16,14 19,21 22,28Z" fill="white"/>
+              <line x1="7" y1="5" x2="13" y2="13" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="5" y1="11" x2="15" y2="8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M43,18 L51,16 L53,29 L44,32 Z" fill="#003DA5"/>
+              <line x1="48" y1="17" x2="48" y2="31" stroke="#F5C518" stroke-width="1.6"/>
+              <line x1="44" y1="21" x2="52" y2="21" stroke="#F5C518" stroke-width="1.6"/>
+              <line x1="44" y1="25" x2="52" y2="25" stroke="#F5C518" stroke-width="1.6"/>
+            </svg>
+            <div>
+              <strong data-i18n="footer.title">Republic of Lithuania</strong>
+              <span data-i18n="footer.sub">Honorary Consulate · Yaoundé</span>
+            </div>
+          </div>
+          <p data-i18n="footer.tagline">Building bridges between Lithuania and Cameroon through diplomacy, culture, trade, and education.</p>
+          <div class="footer-flags">
+            <div class="mini-flag mini-flag-lt"><div style="background:#FDB913"></div><div style="background:#006A44"></div><div style="background:#C1272D"></div></div>
+            <span class="footer-flags-x">×</span>
+            <div class="mini-flag mini-flag-cm"><div style="background:#007A5E"></div><div style="background:#CE1126;display:flex;align-items:center;justify-content:center;font-size:7px;color:#FCD116">★</div><div style="background:#FCD116"></div></div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 data-i18n="footer.col1">Consulate</h4>
+            <a href="#consular" data-i18n="nav.consular">Consular Services</a>
+            <a href="#consul" data-i18n="nav.consul">Our Consul</a>
+            <a href="#faq" data-i18n="nav.faq">FAQ</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.col2">Lithuania</h4>
+            <a href="#about" data-i18n="nav.about">About Lithuania</a>
+            <a href="#investment" data-i18n="nav.investment">Investment</a>
+            <a href="#education" data-i18n="nav.education">Education</a>
+            <a href="#cooperation" data-i18n="coop.tag">Development Cooperation</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.col3">External Links</h4>
+            <a href="https://lithuania.lt" target="_blank">Lithuania.lt</a>
+            <a href="https://lithuania.travel" target="_blank">Lithuania Travel</a>
+            <a href="https://www.mfa.lt" target="_blank" data-i18n="footer.mfa">Ministry of Foreign Affairs</a>
+            <a href="https://www.studylithuania.lt" target="_blank" data-i18n="footer.study">Study in Lithuania</a>
+            <a href="https://www.investlithuania.com" target="_blank" data-i18n="footer.invest">Invest Lithuania</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">© 2026 Honorary Consulate of Lithuania in Cameroon. All rights reserved.</p>
+        <p class="footer-consul-credit">Consul: Deli Sarsar | Prime Nexus | Yaoundé</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js?v=4"></script>
+</body>
+</html>
