@@ -237,7 +237,7 @@ const translations = {
     'contact.consul.name':  'Honorary Consulate of Lithuania',
     'contact.consul.sub':   'in Cameroon – Yaoundé',
     'contact.addr.label':   'Address',
-    'contact.addr.value':   'Rue 1794, opposite Huawei HQ\nBastos, Yaoundé, Cameroon',
+    'contact.addr.value':   'Rue 1794, Opposite Huawei Cameroon HQ\nBastos, Yaoundé, Cameroon',
     'contact.hours.label':  'Office Hours',
     'contact.hours.value':  'Monday – Friday: 9:00 a.m. – 12:00 p.m.',
     'contact.phone.label':  'Telephone',
@@ -261,9 +261,9 @@ const translations = {
     'form.success.title': 'Message Sent!',
     'form.success.text':  'Thank you for contacting the Honorary Consulate of Lithuania in Cameroon. We aim to respond as soon as possible.',
     'map.title':    'Find Us',
-    'map.location': 'Rue 1794 (opposite Huawei HQ), Bastos, Yaoundé',
-    'map.note':     'Bastos, Yaoundé, Centre Region, Cameroon',
-    'map.btn':      'Open in Google Maps',
+    'map.location': 'Rue 1794 (Opposite Huawei Cameroon HQ), Bastos, Yaoundé',
+    'map.country':  'Cameroon',
+    'map.btn':      'Open in OpenStreetMap →',
     // Slider
     'slider.tag':       'Discover Lithuania',
     'slider.title':     'A Country Worth Knowing',
@@ -293,7 +293,7 @@ const translations = {
     'footer.mfa':      'Ministry of Foreign Affairs',
     'footer.study':    'Study in Lithuania',
     'footer.invest':   'Invest Lithuania',
-    'footer.copy':     '© 2026 Honorary Consulate of Lithuania in Cameroon. All rights reserved.',
+    'footer.copy':     'Honorary Consulate of Lithuania in Cameroon. All rights reserved.',
   },
 
   fr: {
@@ -530,7 +530,7 @@ const translations = {
     'contact.consul.name': 'Consulat honoraire de Lituanie',
     'contact.consul.sub':  'au Cameroun – Yaoundé',
     'contact.addr.label':  'Adresse',
-    'contact.addr.value':  'Rue 1794, en face du siège Huawei\nBastos, Yaoundé, Cameroun',
+    'contact.addr.value':  'Rue 1794, en face du siège Huawei Cameroun\nBastos, Yaoundé, Cameroun',
     'contact.hours.label': 'Heures de bureau',
     'contact.hours.value': 'Lundi – Vendredi : 9h00 – 12h00',
     'contact.phone.label': 'Téléphone',
@@ -554,9 +554,9 @@ const translations = {
     'form.success.title': 'Message envoyé !',
     'form.success.text':  'Merci de contacter le Consulat honoraire de Lituanie au Cameroun. Nous nous efforçons de répondre dans les meilleurs délais.',
     'map.title':    'Nous trouver',
-    'map.location': 'Rue 1794 (en face du siège Huawei), Bastos, Yaoundé',
-    'map.note':     'Bastos, Yaoundé, Région du Centre, Cameroun',
-    'map.btn':      'Ouvrir dans Google Maps',
+    'map.location': 'Rue 1794 (en face du siège Huawei Cameroun), Bastos, Yaoundé',
+    'map.country':  'Cameroun',
+    'map.btn':      'Ouvrir dans OpenStreetMap →',
     'footer.title':   'République de Lituanie',
     'footer.sub':     'Consulat honoraire · Yaoundé',
     'footer.tagline': 'Bâtir des ponts entre la Lituanie et le Cameroun par la diplomatie, la culture, le commerce et l\'éducation.',
@@ -566,7 +566,7 @@ const translations = {
     'footer.mfa':   'Ministère des Affaires étrangères',
     'footer.study': 'Étudier en Lituanie',
     'footer.invest':'Invest Lithuania',
-    'footer.copy':  '© 2026 Consulat honoraire de Lituanie au Cameroun. Tous droits réservés.',
+    'footer.copy':  'Consulat honoraire de Lituanie au Cameroun. Tous droits réservés.',
     'coop.tag': 'Partenariat',
   },
 
@@ -805,7 +805,7 @@ const translations = {
     'contact.consul.name': 'Lietuvos garbės konsulatas',
     'contact.consul.sub':  'Kamerūne – Jaundėje',
     'contact.addr.label':  'Adresas',
-    'contact.addr.value':  'Rue 1794, priešais „Huawei" būstinę\nBastos, Jaundė, Kamerūnas',
+    'contact.addr.value':  'Rue 1794, priešais „Huawei Cameroon" būstinę\nBastos, Jaundė, Kamerūnas',
     'contact.hours.label': 'Darbo laikas',
     'contact.hours.value': 'Pirmadienis – Penktadienis: 9:00 – 12:00',
     'contact.phone.label': 'Telefonas',
@@ -829,9 +829,9 @@ const translations = {
     'form.success.title': 'Žinutė išsiųsta!',
     'form.success.text':  'Ačiū, kad susisiekėte su Lietuvos garbės konsulatu Kamerūne. Stengiamės atsakyti kuo greičiau.',
     'map.title':    'Kaip mus rasti',
-    'map.location': 'Rue 1794 (priešais „Huawei" būstinę), Bastos, Jaundė',
-    'map.note':     'Bastos, Jaundė, Centrinė sritis, Kamerūnas',
-    'map.btn':      'Atidaryti „Google" žemėlapiuose',
+    'map.location': 'Rue 1794 (priešais „Huawei Cameroon" būstinę), Bastos, Jaundė',
+    'map.country':  'Kamerūnas',
+    'map.btn':      'Atidaryti OpenStreetMap →',
     'footer.title':   'Lietuvos Respublika',
     'footer.sub':     'Garbės konsulatas · Jaundė',
     'footer.tagline': 'Tiltų tiesimas tarp Lietuvos ir Kamerūno diplomatijos, kultūros, prekybos ir švietimo srityse.',
@@ -841,7 +841,7 @@ const translations = {
     'footer.mfa':   'Užsienio reikalų ministerija',
     'footer.study': 'Studijuok Lietuvoje',
     'footer.invest':'Invest Lithuania',
-    'footer.copy':  '© 2026 Lietuvos garbės konsulatas Kamerūne. Visos teisės saugomos.',
+    'footer.copy':  'Lietuvos garbės konsulatas Kamerūne. Visos teisės saugomos.',
     'coop.tag': 'Partnerystė',
   }
 };
@@ -1027,6 +1027,10 @@ function injectStyles() {
 
 // ── INIT ────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+  // Dynamic footer year
+  const yearEl = document.getElementById('footer-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
   injectStyles();
   initTheme();
   initNav();
